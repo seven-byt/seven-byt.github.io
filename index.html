@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/icons/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Novikov</title>
+</head>
+<body>
+    <header class="header animate__animated animate__fadeInDown">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="#first-screen"><img src="img/logo.svg" alt="logo"></a>
+                </div>
+    
+                <div class="header__menu">
+                    <nav>
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item"><a class="header__menu-link" href="#about">Обо мне</a></li>
+                            <li class="header__menu-item"><a class="header__menu-link" href="#works">Портфолио</a></li>
+                            <li class="header__menu-item"><a class="header__menu-link" href="#social">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="header__hamburger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="first-screen" class="first-screen">
+        <div class="container container__first-screen">
+            <h1 class="first-screen__title animate__animated animate__fadeInLeft">Здравствуйте!</h1>
+            <p class="first-screen__text animate__animated animate__fadeInLeft">Меня зовут Артем <br> и я Frontend-разработчик.</p>
+
+            <div class="first-screen__pink"></div>
+            <div class="first-screen__green"></div>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="subtitle subtitle_about wow animate__animated animate__zoomIn">Немного обо мне</h2>
+
+            <div class="about__wrapper wow animate__animated animate__zoomIn">
+                <div class="about__wrapper-img">
+                    <img src="img/main_photo.png" alt="main">
+                </div>
+                <div class="about__wrapper-descr">
+                    <p>
+                        Хорошо владею html/css. Все аккуратно, 
+                        по полочками, с комментариями, адекватное название классов. Верстка независимыми блоками, bootstrap, sass, бэм, media запросы, css - анимация. Попиксельная верстка.
+                    </p>
+                    <p>
+                        JQuery - да, подключить и запилить готовое решение под свои нужды - нет проблем.
+                        JavaScript знания есть, но так же есть куда расти. Понимаю логику, код(в том числе чужой).
+                        Часто алгоритм решения задачи в голове есть, 
+                        а перенести в редактор кода занимает некоторое количество времени. 
+                    </p>
+                    <p>
+                        Стремлюсь к сложным задачам, так как если 
+                        трудно - значит расту. Почти всегда такие задачи оказываются самыми интересными.
+                    </p>
+                    <h3 class="skills">Ключевые навыки:</h3>
+
+                    <div class="about__wrapper-skills">
+                        HTML, CSS, SASS, SCSS, flex, grid, bootstrap, jquery, git, gulp, JS, WebPack
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="works" class="works">
+        <div class="container">
+            <h2 class="subtitle wow animate__animated animate__zoomIn">Посмотрите мои работы</h2>
+
+            <div class="works__wrapper wow animate__animated animate__zoomIn">
+                <div class="works__wrapper-img">
+                    <img src="img/work1.png" alt="work">
+                </div>
+                <div class="works__wrapper-descr">
+                    <h3 class="works__wrapper-name">Адаптивная верстка лендинга</h3>
+
+                    <div class="works__wrapper-text">
+                        Задачей было адаптивно сверстать landing-page, максимально используя CSS.
+                    </div>
+
+                    <div class="works__wrapper-use">Что использовал:</div>
+
+                    <div class="works__wrapper-stack">
+                        <div class="works__wrapper-stack-item">SASS</div>
+                        <div class="works__wrapper-stack-item">FLEX</div>
+                        <div class="works__wrapper-stack-item">GRID</div>
+                        <div class="works__wrapper-stack-item">JS</div>
+                        <div class="works__wrapper-stack-item">JQuery</div>
+                        <div class="works__wrapper-stack-item">GULP</div>
+                    </div>
+
+                    <div class="works__wrapper-btns">
+                        <a href="#" class="btn">Перейти на сайт</a>
+                        <a href="#" class="btn">Посмотреть код</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="works__wrapper wow animate__animated animate__zoomIn">
+                <div class="works__wrapper-img works__wrapper-img-left">
+                    <img src="img/work2.png" alt="work">
+                </div>
+                <div class="works__wrapper-descr">
+                    <h3 class="works__wrapper-name">Интерактив на JavaScript</h3>
+
+                    <div class="works__wrapper-text">
+                        Реализовал табы, модальные окна, отправка форм, слайдер, калькулятор, отсчет времени. Чистый JS. Адаптив не требовался. 
+                        Проект выполнял модульно и собирал 
+                        с помощью WebPack.
+                    </div>
+
+                    <div class="works__wrapper-use">Что использовал:</div>
+
+                    <div class="works__wrapper-stack">
+                        <div class="works__wrapper-stack-item">JavaScript</div>
+                        <div class="works__wrapper-stack-item">WebPack</div>
+                    </div>
+
+                    <div class="works__wrapper-btns">
+                        <a href="#" class="btn">Перейти на сайт</a>
+                        <a href="#" class="btn">Посмотреть код</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="soon">
+        <div class="container">
+            <h2 class="subtitle wow animate__animated animate__zoomIn">Скоро...</h2>
+
+            <div class="soon__wrapper wow animate__animated animate__zoomIn">
+                <div class="soon__loader">
+                    <div style="--i:1;" class="soon__item"></div>
+                    <div style="--i:2;" class="soon__item"></div>
+                    <div style="--i:3;" class="soon__item"></div>
+                    <div style="--i:4;" class="soon__item"></div>
+                    <div style="--i:5;" class="soon__item"></div>
+                    <div style="--i:6;" class="soon__item"></div>
+                    <div style="--i:7;" class="soon__item"></div>
+                    <div style="--i:8;" class="soon__item"></div>
+                </div>
+    
+                <div class="soon__text wow animate__animated animate__zoomIn">
+                    Каждый день я изучаю что-то новое. <br>
+                    Скоро здесь появится новый и интересный проект.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="social" class="social">
+        <div class="container">
+            <h2 class="subtitle wow animate__animated animate__zoomIn">Свяжитесь со мной</h2>
+
+            <div class="social__wrapper wow animate__animated animate__zoomIn">
+                <a href="https://tlgg.ru/@SevenSeez" class="btn">TELEGRAM</a>
+                <a href="https://www.instagram.com/novikov_qo" class="btn">INSTAGRAM</a>
+                <a href="https://vk.com/seven9710" class="btn">VKONTAKTE</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__policy wow animate__animated animate__fadeInUp">
+                © 2021 Artem Novikov
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

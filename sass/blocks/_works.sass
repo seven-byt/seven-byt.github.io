@@ -1,0 +1,115 @@
+.works
+    padding-top: 1px
+    background-color: #1B2B34
+    &__wrapper
+        margin-top: 100px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &-img
+            display: flex
+            justify-content: center
+            align-items: center
+            background: #283F49
+            width: 555px
+            height: 410px
+            img
+                width: 451px
+                height: 292px
+            &-left
+                order: 1
+        &-descr
+            width: 535px
+        &-name
+            font-weight: 500
+            font-size: 25px
+            line-height: 130%
+            color: $main-color
+        &-text
+            width: 490px
+            margin-top: 20px
+            font-size: 20px
+            line-height: 130%
+            color: $main-color
+        &-use
+            margin-top: 35px
+            font-weight: 500
+            font-size: 22px
+            line-height: 130%
+            color: $main-color
+        &-stack
+            margin-top: 30px
+            width: 460px
+            display: grid
+            grid-template-columns: repeat(auto-fit, 140px)
+            justify-content: start
+            column-gap: 20px
+            row-gap: 20px
+            &-item
+                background: #283F49
+                width: 140px
+                height: 50px
+                display: flex
+                justify-content: center
+                align-items: center
+                color: $second-color
+                font-size: 18px
+                line-height: 130%
+        &-btns
+            margin-top: 33px
+            width: 540px
+            display: flex
+            justify-content: space-between
+
+@media (max-width: 1200px)
+    .works
+        &__wrapper
+            &-img
+                width: 443px
+                height: 318px
+                img
+                    width: 351px
+                    height: 228px
+            &-descr
+                width: 460px
+            &-name
+                font-size: 20px
+            &-text
+                width: 100%
+                font-size: 16px
+            &-use
+                font-size: 20px
+            &-stack
+                &-item
+                    font-size: 16px
+            &-btns
+                width: 460px
+
+@media (max-width: 992px)
+    .works
+        &__wrapper
+            margin-top: 70px
+            flex-direction: column
+            &-img-left
+                order: 0
+            &-name
+                margin-top: 40px
+
+@media (max-width: 576px)
+    .works
+        &__wrapper
+            margin-top: 30px
+            &-img
+                width: 247px
+                height: 176px
+                img
+                    width: 195px
+                    height: 126px   
+            &-descr
+                width: 100%
+            &-stack
+                width: 100%
+            &-btns
+                flex-direction: column
+                width: 100%             
+            

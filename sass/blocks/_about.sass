@@ -1,0 +1,72 @@
+.about
+    padding-top: 1px
+    background-color: #1B2B34
+    transition: .3s all
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 100px
+        &-img
+            width: 441px
+            height: 590px
+            img
+                width: 100%
+                height: 100%
+        &-descr
+            width: 564px
+            p
+                margin-top: 20px
+                color: $main-color
+                font-size: 20px
+                line-height: 130%
+            p:first-child
+                margin-top: 0
+        &-skills
+            font-size: 20px
+            line-height: 130%
+            color: $second-color
+            margin-top: 20px
+
+@media (max-width: 1200px)
+    .about
+        &__wrapper
+            &-img
+                width: 341px
+                height: 457px
+            &-descr
+                width: 500px
+                p
+                    font-size: 16px
+            &-skills
+                font-size: 16px
+
+@media (max-width: 992px)
+    .about
+        &__wrapper
+            &-img
+                width: 238px
+                height: 309px
+            &-descr
+                width: 442px
+
+@media (max-width: 768px)
+    .about
+        &__wrapper
+            flex-direction: column
+            &-img
+                margin: 0 auto
+            &-descr
+                margin-top: 30px
+
+@media (max-width: 576px)
+    .about
+        &__wrapper
+            margin-top: 36px
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            &-descr
+                width: 100%
+                p:first-child
+                    margin-top: 20px

@@ -1,0 +1,28 @@
+.social
+    padding-top: 1px
+    background: #1B2B34
+    &__wrapper
+        margin-top: 100px
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+@media (max-width: 992px)
+    .social
+        &__wrapper
+            margin-top: 70px
+
+@media (max-width: 768px)
+    .social
+        &__wrapper
+            .btn
+                width: 160px
+
+@media (max-width: 576px)
+    .social
+        &__wrapper
+            margin-top: 0
+            flex-direction: column
+            .btn
+                width: 100%
+                margin-top: 30px

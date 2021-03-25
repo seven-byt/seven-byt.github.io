@@ -1,0 +1,130 @@
+@import 'variables/variables'
+*
+    font-family: 'JetBrains Mono', monospace
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+.container
+    width: 1160px
+    margin: 0 auto
+    padding: 0 10px
+    &__first-screen
+        position: relative
+
+.subtitle
+    width: fit-content
+    margin: 0 auto
+    margin-top: 220px
+    position: relative
+    font-weight: bold
+    font-size: 30px
+    line-height: 40px
+    color: $main-color
+    z-index: 100
+    &::before
+        content: '</'
+        position: absolute
+        font-weight: bold
+        font-size: 40px
+        line-height: 47px
+        letter-spacing: 2px
+        color: $second-color
+        width: 37px
+        height: 30px
+        top: 0
+        left: -60px
+    &_about
+        margin-left: 635px
+.skills
+    font-weight: 500
+    font-size: 25px
+    line-height: 130%
+    color: $main-color
+    margin-top: 25px
+
+.btn
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 250px
+    height: 55px
+    background: #1B2B34
+    border-bottom: 5px solid $second-color
+    color: $main-color
+    text-decoration: none
+    font-weight: 500
+    font-size: 18px
+    line-height: 130%
+    z-index: 10
+    &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 0
+        background: $second-color
+        transition: all .3s
+    &:hover
+        &::after
+            height: 55px
+            opacity: .3
+
+.hidden
+    overflow: hidden
+
+@import 'blocks/header'
+@import 'blocks/first-screen'
+@import 'blocks/about'
+@import 'blocks/works'
+@import 'blocks/soon'
+@import 'blocks/social'
+@import 'blocks/_footer'
+
+@media (max-width: 1200px)
+    .container
+        width: 980px
+    .skills
+        font-size: 20px
+    .btn
+        width: 215px
+        font-size: 16px
+
+@media (max-width: 992px)
+    .container
+        max-width: 740px
+    .subtitle
+        margin: 0 auto
+        margin-top: 125px
+        font-size: 25px
+    .btn
+        border: 1px solid $second-color
+        &:hover
+            &::after
+                height: 0
+                opacity: 0
+
+@media (max-width: 768px)
+    .container
+        max-width: 560px
+    .btn
+        width: 215px
+
+@media (max-width: 576px)
+    .container
+        max-width: 100%
+    .subtitle
+        margin-top: 50px
+        font-size: 19px
+        &_about
+            margin-top: 0
+            margin-left: 55px
+        &:before
+            font-size: 30px
+            left: -40px
+    .btn
+        width: 100%
+    .btn:last-child
+        margin-top: 30px

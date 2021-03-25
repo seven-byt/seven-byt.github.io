@@ -1,0 +1,91 @@
+.first-screen
+    padding-top: 292px
+    min-height: 100vh
+    background-color: #1B2B34
+    &__title
+        font-weight: bold
+        font-size: 65px
+        line-height: 86px
+        color: $main-color
+        z-index: 2000
+    &__text
+        margin-top: 22px
+        font-weight: normal
+        font-size: 25px
+        line-height: 140%
+        color: $main-color
+        z-index: 2000
+    &__pink
+        position: absolute
+        top: 180px
+        right: 250px
+        border-radius: 100%
+        width: 300px
+        height: 300px
+        background: #BB80B3
+        filter: blur(70px)
+        z-index: 10
+        transition: filter .9s
+        animation-name: blur, movePink
+        animation-duration: 8s
+        animation-iteration-count: infinite
+    &__green
+        position: absolute
+        width: 300px
+        height: 300px
+        right: 30px
+        top: 10px
+        background: #64A473
+        filter: blur(70px)
+        border-radius: 100%
+        z-index: 1
+        transition: filter .9s
+        animation-name: blur, moveGreen
+        animation-duration: 8s
+        animation-iteration-count: infinite
+
+@keyframes blur
+    0%
+
+    50%
+        filter: blur(130px)
+    100%
+        filter: blur(70px)
+
+@keyframes movePink
+    0%
+
+    50%
+        right: 30px
+        top: 10px
+    100%
+        top: 180px
+        right: 250px
+
+@keyframes moveGreen
+    0%
+
+    50%
+        top: 180px
+        right: 250px
+    100%
+        right: 30px
+        top: 10px
+
+@media (max-width: 992px)
+    .first-screen
+        &__title
+            font-size: 50px
+            line-height: 66px
+        &__text
+            font-size: 20px
+            line-height: 120%
+
+@media (max-width: 576px)
+    .first-screen
+        padding-top: 200px
+        &__title
+            font-size: 30px
+            line-height: 40px
+        &__text
+            font-size: 18px
