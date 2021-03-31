@@ -1,5 +1,5 @@
 .works
-    padding-top: 1px
+    padding-top: 220px
     background-color: #1B2B34
     &__wrapper
         margin-top: 100px
@@ -26,7 +26,8 @@
             line-height: 130%
             color: $main-color
         &-text
-            width: 490px
+            max-width: 490px
+            width: 100%
             margin-top: 20px
             font-size: 20px
             line-height: 130%
@@ -75,7 +76,6 @@
             &-name
                 font-size: 20px
             &-text
-                width: 100%
                 font-size: 16px
             &-use
                 font-size: 20px
@@ -87,6 +87,7 @@
 
 @media (max-width: 992px)
     .works
+        padding-top: 125px
         &__wrapper
             margin-top: 70px
             flex-direction: column
@@ -97,6 +98,7 @@
 
 @media (max-width: 576px)
     .works
+        padding-top: 50px
         &__wrapper
             margin-top: 30px
             &-img

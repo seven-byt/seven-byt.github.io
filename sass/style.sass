@@ -15,7 +15,6 @@
 .subtitle
     width: fit-content
     margin: 0 auto
-    margin-top: 220px
     position: relative
     font-weight: bold
     font-size: 30px
@@ -97,14 +96,19 @@
         max-width: 740px
     .subtitle
         margin: 0 auto
-        margin-top: 125px
         font-size: 25px
     .btn
         border: 1px solid $second-color
+        &:nth-child(1)
+            background: $second-color
         &:hover
             &::after
                 height: 0
                 opacity: 0
+    .social
+        .btn
+            &:nth-child(1)
+                background: #1B2B34
 
 @media (max-width: 768px)
     .container
@@ -116,7 +120,6 @@
     .container
         max-width: 100%
     .subtitle
-        margin-top: 50px
         font-size: 19px
         &_about
             margin-top: 0
